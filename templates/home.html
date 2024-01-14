@@ -1,0 +1,22 @@
+{%extends 'base.html'%} {% load static %} 
+{% block title %}Home{% endblock title%} 
+{% block cssfile %} <link rel="stylesheet" href="{% static "restaurant/css/style.css" %}" >   {% endblock cssfile %} 
+{%block content%}
+<div class="row container m-auto d-flex">
+  <div class="col-md-6">
+    <h1>
+      Welcome to <br />
+      Hunger Killer
+    </h1>
+    <br />
+    <p>Best place to choose and order</p>
+  </div>
+  <div class="col-md-6">
+    <img
+      class="img-fluid w-100"
+      src="{% static 'images/home.jpg' %}"
+      alt="food image 1"
+    />
+  </div>
+</div>
+{%endblock%}

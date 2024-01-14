@@ -1,0 +1,11 @@
+{%extends 'base.html'%} 
+{% load static %} 
+
+{% block title %}About{% endblock title %} 
+
+{% block cssfile %} <link rel="stylesheet" href="{% static "about_us/css/style.css" %}" >   {% endblock cssfile %} 
+{%block content%}
+
+<h1>This is About Us</h1>
+<img src="{%static "images/food2.jpg"%}" alt="">
+{%endblock%}
